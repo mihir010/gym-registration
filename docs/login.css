@@ -1,0 +1,284 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.logo {
+    position: relative;
+    border: 2px solid;
+    height: 16vh;
+    width: 14vw;
+    margin: 0px;
+    padding: 0px;
+    background-image: url('https://media.istockphoto.com/vectors/vector-design-element-for-the-fitness-center-vector-id1035561592?k=20&m=1035561592&s=612x612&w=0&h=8MwrSK9UQ_cY7K6NrKbi5txxK1R_Nhue0FGrw3L1BiI=');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    top: -0.01vh;
+    left: -0.01vw;
+    border: 2px solid #242424;
+}
+
+.container {
+    display: flex;
+    border: 2px solid;
+    background-color: #404040;
+    /* animation-name: partition;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 3s; */
+}
+
+
+/* @keyframes partition {
+    from {
+        border: 0px;
+    }
+    to {
+        border-bottom: 10px solid #eaea18;
+    }
+} */
+
+.navigation {
+    display: flex;
+    list-style: none;
+    position: relative;
+    top: 7vh;
+    left: 26vw;
+    height: 6vh;
+}
+
+.item {
+    display: flex;
+    position: relative;
+    top: 1.2vh;
+    left: 3.2vw;
+    /* margin: .7vh 2.5vw; */
+    /* padding: 3px 5px; */
+    height: 8vh;
+    font-family: 'Padauk', sans-serif;
+    background-color: #404040;
+    font-size: 1.3rem;
+    width: 11vw;
+    /* align-items: flex-end; */
+    border-top-left-radius: 11px;
+}
+
+.item a {
+    display: flex;
+    color: white;
+    border-right: 2px solid #eaea18;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: flex-end;
+    text-decoration: none;
+    margin: auto;
+    height: 7.6vh;
+    width: 11vw;
+    transition: all .3s ease-out;
+    /* animation: gradient 0.3s ease-out infinite; */
+}
+
+.item a:hover {
+    /* animation: gradient 0.3s ease-out infinite; */
+    background-image: linear-gradient( #404040, #eaea18);
+    border-top-right-radius: 15px;
+    /* border-top-right-radius: 19px; */
+    transform: translateY(-0.5rem);
+    /* transform: skew(-10deg); */
+    color: #404040;
+}
+
+
+/* @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+} */
+
+.btn {
+    position: absolute;
+    display: block;
+    margin: auto;
+    border: 2px solid #eaea18;
+    background-color: #404040;
+    color: white;
+    height: 4vh;
+    width: 8vw;
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-family: 'Padauk', sans-serif;
+    font-size: 1.2rem;
+    right: 1vw;
+    top: 1vh;
+    transition: all .2s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #eaea18;
+    border: 2px solid #404040;
+    color: #404040;
+    box-shadow: #eaea18 7px 9px;
+    cursor: pointer;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* border: 2px solid rebeccapurple; */
+    height: 73vh;
+    width: 40vw;
+    position: absolute;
+    right: 0px;
+    align-content: center;
+    align-items: center;
+    background-color: #000000bf;
+    color: white;
+}
+
+.gallery {
+    /* border: 2px solid yellow; */
+    height: 73vh;
+    width: 60vw;
+    animation-name: slide-show;
+    animation-duration: 11s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes slide-show {
+    /* 0% {
+        background-image: url('https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1024-512,f_auto,q_auto:best/newscms/2021_10/3455164/210308-gym-masks-bd-2x1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    20% {
+        background-image: url('https://www.out-sport.eu/wp-content/uploads/2018/05/Schermata-2018-06-19-alle-11.07.32-800x563.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    } */
+    0% {
+        background-image: url('https://api.time.com/wp-content/uploads/2020/03/gym-coronavirus.jpg?w=824&quality=70');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    50% {
+        background-image: url('https://www.superprof.ca/blog/wp-content/uploads/2020/02/john-arano-h4i9g-de7po-unsplash-1060x708.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    100% {
+        background-image: url('https://www.thenewsminute.com/sites/default/files/styles/news_detail/public/Gym_1200-picxy.jpg?itok=Gu6rGHr7');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    /* 100% {
+        background-image: url('https://static.toiimg.com/photo/77350677.cms');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    } */
+}
+
+.login h3 {
+    display: flex;
+    color: black;
+    margin: auto;
+    text-align: center;
+    background-color: #eaea18;
+    width: 38.8vw;
+    height: 6vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.reg {
+    display: block;
+    margin: auto;
+    width: 23vw;
+    height: 3vh;
+    transition: all .2s ease-out;
+    font-family: 'Padauk', sans-serif;
+    text-align: center;
+    font-size: 1.2rem;
+    outline: none;
+}
+
+.reg:focus {
+    background-color: #262424;
+    color: rgb(255, 255, 255);
+    border-bottom: 2px solid #eaea18;
+    border-left: 2px solid #eaea18;
+    /* transform: translate(-0.5rem, -0.5rem); */
+    /* transform: translateY(-0.5rem); */
+    width: 25vw;
+}
+
+
+/* .form {
+    margin: 3vh 0vw;
+} */
+
+input[type='submit'] {
+    display: block;
+    margin: auto;
+    border: 2px solid #eaea18;
+    background-color: #404040;
+    color: white;
+    height: 6vh;
+    width: 8vw;
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-family: 'Padauk', sans-serif;
+    font-size: 1.2rem;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+input[type='submit']:hover {
+    background-color: #eaea18;
+    border: 2px solid #404040;
+    color: #404040;
+    box-shadow: yellow 7px 9px;
+}
+
+.gender {
+    margin: auto;
+    text-align: center;
+    font-family: 'Padauk', sans-serif;
+    font-size: 1.2rem;
+}
+
+.extras {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eaea18;
+    /* border: 2px solid red; */
+    height: 10vh;
+}
+
+#btn1 {
+    /* position: absolute; */
+    right: 10vw;
+}
+
+
+/* @keyframes partition {
+    from {
+        width: 0;
+    }
+    to {
+        width: 2500px;
+    }
+} */
