@@ -82,7 +82,7 @@
 .item a:hover {
     /* animation: gradient 0.3s ease-out infinite; */
     background-image: linear-gradient( #404040, #eaea18);
-    border-top-right-radius: 15px;
+/*     border-top-right-radius: 15px; */
     /* border-top-right-radius: 19px; */
     transform: translateY(-0.5rem);
     /* transform: skew(-10deg); */
